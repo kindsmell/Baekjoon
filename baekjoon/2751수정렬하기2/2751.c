@@ -1,4 +1,3 @@
-//2751수정렬하기2
 #include <stdio.h>
 
 void merge(int list[], int left, int mid, int right) {
@@ -35,7 +34,7 @@ void merge(int list[], int left, int mid, int right) {
 void merge_sort(int list[], int left, int right) {
   int mid;
 
-  //재귀함수로 divide, sort, merge
+  //재귀함수
   if (left < right) {
     mid = (left + right) / 2;
     merge_sort(list, left, mid);
