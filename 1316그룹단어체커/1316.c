@@ -15,7 +15,7 @@ int check_r(char* arr, char word, int i)
 	return (flag);
 }
 
-int main_1316()
+int main()
 {
 	int n, cnt = 0, flag = 0;
 	char arr[101];
