@@ -9,7 +9,7 @@ using namespace std;
 
 int idx_system(int i, int paper, int n, vector<int> &A, int k)
 {
-    i = (i + paper % n + n) % n;
+    i = (i + paper + n) % n;
 
     if(k != n -1)
     {   
