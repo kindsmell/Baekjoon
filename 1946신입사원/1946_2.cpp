@@ -27,9 +27,9 @@ int main()
 
         for(int i = 1; i < n; i++)
         {
-            if(A[tmp].second > A[i].second){ //이 부분이 진짜 이해가 안 됨..
+            if(A[tmp].second > A[i].second){
                 cnt++;
-                tmp = i;
+                tmp = i; //짱먹은애 tmp를 이겨야지만 뽑힐 수 있음!
             }
         }
         
