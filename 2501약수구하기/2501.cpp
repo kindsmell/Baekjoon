@@ -1,21 +1,28 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    int ans[10000] = {10000}, N, K, cnt = 0, p = 0;
-    cin >> N >> K;
-    for (int i = 1; i < 10000; i++)
+    int n, k;
+    cin >> n >> k;
+    int rnt = 0, cnt = 1;
+    int arr[10001] = {0};
+
+    for (int i = 1; i <= n; i++)
     {
-        if (i > N)
-            break;
-        if (N % i == 0) // 약수라면
+        if (n % i == 0)
         {
+            arr[cnt] = i;
             cnt++;
-            ans[p++] = i;
         }
     }
-    if (cnt < K)
-        cout << "0";
+
+    if (cnt < k)
+    {
+        cout << 0;
+    }
     else
-        cout << ans[K - 1];
+    {
+        cout << arr[k];
+    }
 }
